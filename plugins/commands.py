@@ -381,6 +381,3 @@ async def geg_template(client, message):
     settings = await get_settings(grp_id)
     template = settings['template']
     await sts.edit(f"Cᴜʀʀᴇɴᴛ Tᴇᴍᴘʟᴀᴛᴇ Fᴏʀ {title} Iꜱ\n\n{template}")
-
-elif query.data == "ftam":
-        await query.answer("═══════════════════\n🔰 𝖮𝖶𝖭𝖤𝖱 𝖨𝖭𝖥𝖮 🔰\n═══════════════════\n Oᴡɴᴇʀ :- Vɪꜱʜɴᴜ A \n Uꜱᴇʀ Nᴀᴍᴇ :- @Vɪꜱ_ʜɴᴜ_ʙᴏᴛ \n Dᴇᴠ Nᴀᴍᴇ :- Hᴘᴍ \n Uꜱᴇʀ Nᴀᴍᴇ : @Hᴘᴍ_Cʀᴇᴀᴛɪᴠᴇ \n Rᴇɢɪᴏɴ :- INDIA🇮🇳 \n Lᴀɴɢᴜᴀɢᴇ :- Mᴀʟᴀʏᴀʟᴀᴍ🇮🇳", show_alert=True)
