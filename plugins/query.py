@@ -423,19 +423,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await removebg_sticker(client, query.message)
     elif query.data == "pages":
         await query.answer("🤨 Cᴜʀɪᴏsɪᴛʏ Is A Lɪᴛᴛʟᴇ Mᴏʀᴇ, Isɴ'ᴛ Iᴛ? 😁", show_alert=True)
+    elif query.data == "ftam":
+        await query.answer("═══════════════════\n🔰 𝖮𝖶𝖭𝖤𝖱 𝖨𝖭𝖥𝖮 🔰\n═══════════════════\n Oᴡɴᴇʀ :- Vɪꜱʜɴᴜ A \n Uꜱᴇʀ Nᴀᴍᴇ :- @Vɪꜱ_ʜɴᴜ_ʙᴏᴛ \n Dᴇᴠ Nᴀᴍᴇ :- Hᴘᴍ \n Uꜱᴇʀ Nᴀᴍᴇ : @Hᴘᴍ_Cʀᴇᴀᴛɪᴠᴇ \n Rᴇɢɪᴏɴ :- INDIA🇮🇳 \n Lᴀɴɢᴜᴀɢᴇ :- Mᴀʟᴀʏᴀʟᴀᴍ🇮🇳", show_alert=True)
     elif query.data == "howdl":
         try: await query.answer(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name), show_alert=True)
         except: await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
 
     elif query.data == "start":                        
-        buttons = [[
-            InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ],[
-            InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/mkn_bots_updates")
-            ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+        buttons = [
+            InlineKeyboardButton('⏱️ 𝘈ʙᴏᴜᴛ ⏱️', callback_data='about'),
+            InlineKeyboardButton('𝘖ᴡɴᴇʀ-𝘐ɴғᴏ', callback_data='ftam')
+        ],[
+            InlineKeyboardButton('🚧 Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ 🚧', url='https://t.me/Asianet_serial_HPM4')
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
