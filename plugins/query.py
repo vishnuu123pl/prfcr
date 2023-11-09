@@ -430,7 +430,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except: await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
 
     elif query.data == "start":                        
-        buttons = [
+        buttons = [[
             InlineKeyboardButton('⏱️ 𝘈ʙᴏᴜᴛ ⏱️', callback_data='about'),
             InlineKeyboardButton('𝘖ᴡɴᴇʀ-𝘐ɴғᴏ', callback_data='ftam')
         ],[
