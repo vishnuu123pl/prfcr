@@ -75,9 +75,6 @@ async def pm_next_page(bot, query):
         pass
     await query.answer()
 
-elif query.data == "ftam":
-        await query.answer("═══════════════════\n🔰 𝖮𝖶𝖭𝖤𝖱 𝖨𝖭𝖥𝖮 🔰\n═══════════════════\n Oᴡɴᴇʀ :- Vɪꜱʜɴᴜ A \n Uꜱᴇʀ Nᴀᴍᴇ :- @Vɪꜱ_ʜɴᴜ_ʙᴏᴛ \n Dᴇᴠ Nᴀᴍᴇ :- Hᴘᴍ \n Uꜱᴇʀ Nᴀᴍᴇ : @Hᴘᴍ_Cʀᴇᴀᴛɪᴠᴇ \n Rᴇɢɪᴏɴ :- INDIA🇮🇳 \n Lᴀɴɢᴜᴀɢᴇ :- Mᴀʟᴀʏᴀʟᴀᴍ🇮🇳", show_alert=True)
-
 @Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmspolling")))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
@@ -211,7 +208,7 @@ async def pm_spoll_choker(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ", quote=True)
+        k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Serial Iɴ Tʜᴀᴛ Nᴀᴍᴇ", quote=True)
         await asyncio.sleep(10)
         return await k.delete()
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
