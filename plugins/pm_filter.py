@@ -50,7 +50,7 @@ async def pm_next_page(bot, query):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'pmfile#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
 
-    btn.insert(0, [InlineKeyboardButton("🔗 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔗", url='https://t.me/Asianet_serial_HPM4')])
+    btn.insert(0, [InlineKeyboardButton("🔗 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔗", url=f"https://t.me/Asianet_serial_HPM4")])
     if 0 < offset <= 10: off_set = 0
     elif offset == 0: off_set = None
     else: off_set = offset - 10
