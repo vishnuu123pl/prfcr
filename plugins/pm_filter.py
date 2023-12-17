@@ -176,7 +176,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             **locals()
         )
     else:
-        cap = f"Hᴇʀᴇ Is Wʜᴀᴛ I Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}"
+        cap = f"<b>Hey 👋</b>\n\nതങ്ങൾക്കു ഇൻസ്റ്റന്റ് ലിങ്ക് വഴി സീരിയൽ എടുക്കാൻ അറിയില്ലെങ്കിൽ താഴെ കാണുന്ന command ഇൽ ക്ലിക്ക് ചെയ്യുക ✅.\n\n/How_to_download"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, quote=True, reply_markup=InlineKeyboardMarkup(btn))
