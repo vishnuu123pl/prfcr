@@ -1,4 +1,5 @@
 #--Main----#
+Pyrogram==2.0.106
 pyrofork==2.2.11
 tgcrypto==1.2.5
 aiofiles==22.1.0     
